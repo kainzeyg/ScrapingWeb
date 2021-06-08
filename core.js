@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-const url = 'https://www.uralchem.ru/press/news/'
+const url = 'https://news.ycombinator.com'
 
 axios.get(url)
     .then(responce => {
