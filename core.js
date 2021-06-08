@@ -1,9 +1,13 @@
 var request = require('request');
+var iconv = require('iconv-lite');
 
-var URL = 'https://www.uralchem.ru/press/news/';
+var opt = {
+    url: 'http://www.ferra.ru/ru/techlife/news/',
+    encoding: null
+}
 
-request(URL, function(err, res, body) {
+request(opt, function(err, res, body) {
     if (err) throw err;
-    console.log(body);
+    console.log(iconv.decode(body, 'win1251'));
     console.log(res.statusCode);
 });
