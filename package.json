@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kainzeyg/ScrapingWeb/issues"
   },
-  "homepage": "https://github.com/kainzeyg/ScrapingWeb#readme"
+  "homepage": "https://github.com/kainzeyg/ScrapingWeb#readme",
+  "dependencies": {
+    "nightmare": "^3.0.2"
+  }
 }
